@@ -1,6 +1,4 @@
-/* =========================
-   Workshops.css (Prototype Match)
-   ========================= */
+
 
 /* shared layout container: supports BOTH .container and .wrap */
 .container,
@@ -40,7 +38,7 @@ body.workshops-page{
   box-shadow: 0 2px 10px rgba(0,0,0,.06);
 }
 
-/* navbar内部的容器上下 padding 在这里控制，别写在 .navbar 上 */
+
 .navbar{
   padding: 1px 0; 
 }
@@ -108,9 +106,9 @@ nav a.active {
   nav{ width:100%; justify-content:space-between; gap:14px; }
 }
 
-/* ===== Hero (match teammate) ===== */
+/*  Hero (match teammate)  */
 .hero{
-  background: linear-gradient(to right, #00c853, #00bfa5, #1d4ed8); /* 你想保留绿蓝就保留 */
+  background: linear-gradient(to right, #00c853, #00bfa5, #1d4ed8); 
   padding: 120px 5%;
   display:flex;
   justify-content:center;
@@ -121,7 +119,7 @@ nav a.active {
 
 .hero-content{
   width:100%;
-  padding: 120px 40px;     /* ✅ 这句是“变大”的关键 */
+  padding: 120px 40px;   
   text-align:center;
 }
 
@@ -129,20 +127,20 @@ nav a.active {
   font-size: clamp(2rem, 6vw, 5rem);
   color:#fff;
   margin-bottom: 20px;
-  letter-spacing: 0;       /* 队友没做负字距，你要对齐就别减 */
+  letter-spacing: 0;      
 }
 
 .hero p{
   font-size: clamp(1rem, 2vw, 1.8rem);
   color:#fff;
-  max-width: 800px;        /* ✅ 队友是 800 */
+  max-width: 800px;       
   margin: 0 auto;
   opacity: 1;
 }
 
 .workshops-subnav{
   position: sticky;
-  top: 62px;  /* ✅ 适配你现在navbar padding=10的高度；如果还有遮挡，改 86→92 */
+  top: 62px;  
   z-index: 9999;
   background:#fff;
   border-bottom:1px solid #e5e7eb;
@@ -154,7 +152,7 @@ nav a.active {
   margin: 0 auto;
   padding: 14px 5%;
   display:flex;
-  justify-content:flex-start; /* prototype 偏左 */
+  justify-content:flex-start; 
   gap: 18px;
   flex-wrap:wrap;
 }
@@ -190,17 +188,15 @@ nav a.active {
 .subnav-pill.purple{ background:#ede9fe; color:#6d28d9; }
 
 #children, #adult, #discussions{
-  scroll-margin-top: 170px; /* navbar + subnav 遮挡就调大 */
+  scroll-margin-top: 170px; 
 }
-
-/* ---------- Section backgrounds (THIS is the key) ---------- */
+/*  Section backgrounds (THIS is the key) */
 .section{
   padding: 78px 5%;
   position: relative;
   overflow:hidden;
 }
 
-/* 每段都有自己的“柔和渐变底” */
 .section--children{
   background: linear-gradient(180deg, #fff1f7 0%, #fde7f3 35%, #ffffff 100%);
 }
@@ -228,7 +224,7 @@ nav a.active {
   background: radial-gradient(closest-side, rgba(255,255,255,.70), rgba(255,255,255,0));
 }
 
-/* ---------- Section header ---------- */
+/*  Section header */
 .section-head{
   text-align:center;
   max-width: 980px;
@@ -264,21 +260,20 @@ nav a.active {
   line-height: 1.6;
 }
 
-/* ---------- Workshop Cards Grid (stable + aligned) ---------- */
+/* Workshop Cards Grid (stable + aligned) */
 .grid{
   max-width: 1200px;
   margin: 0 auto;
   display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* ✅ 你目前每段只有2张卡，固定两列最稳 */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
   gap: 34px;
-  align-items: stretch;  /* ✅ 让格子高度一致 */
+  align-items: stretch;  
 }
 
-/* 小屏 */
 @media(max-width:900px){
   .grid{ grid-template-columns: 1fr; }
 }
-/* 你现在只有 2 张卡也没事，会自动占前两列 */
+
 @media(max-width:1050px){
   .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -297,7 +292,7 @@ nav a.active {
 /* Image header */
 .card-media{
   position:relative;
-  height: 250px; /* prototype更扁一点 */
+  height: 250px; 
   overflow:hidden;
 }
 .card-media img{
@@ -340,7 +335,7 @@ nav a.active {
 }
 .card-body h3{
   color:#DC143C;
-  font-size: 26px;  /* 你现在过大/过小会跳，这个更像prototype */
+  font-size: 26px;  
   line-height: 1.15;
   letter-spacing: -0.2px;
 }
@@ -376,7 +371,7 @@ nav a.active {
 }
 .btn:hover{ background:#b01030; }
 
-/* ---------- Discussions (long cards) ---------- */
+/*  Discussions (long cards)  */
 .discussion-list{
   max-width: 1100px;
   margin: 0 auto;
@@ -400,7 +395,7 @@ nav a.active {
 }
 
 .discussion-body{
-  padding: 30px 36px;                 /* ✅ 比你现在更接近prototype */
+  padding: 30px 36px;              
   display:grid;
   grid-template-columns: 1.25fr .75fr;
   gap: 24px;
@@ -408,7 +403,7 @@ nav a.active {
 }
 
 .discussion-body h3{
-  font-size: clamp(1.9rem, 2.8vw, 2.5rem);  /* ✅ 代替 40px：大屏不会炸，小屏也不会太小 */
+  font-size: clamp(1.9rem, 2.8vw, 2.5rem);
   color:#0f172a;
   line-height: 1.12;
   margin-bottom: 10px;
@@ -417,17 +412,17 @@ nav a.active {
 }
 
 .discussion-body p{
-  font-size: 16px;                    /* prototype 就是偏16-18 */
+  font-size: 16px;                   
   color:#475569;
   line-height:1.65;
-  max-width: 52ch;                    /* ✅ 让段落别拉太长，更像prototype */
+  max-width: 52ch;                
 }
 
 .speaker{
   margin-top: 14px;
   color:#7c3aed;
   font-weight: 800;
-  font-size: 16px;                    /* ✅ 别太大 */
+  font-size: 16px;                  
 }
 
 .d-right{
@@ -466,7 +461,7 @@ nav a.active {
   .reserve{ min-width: 180px; }
 }
 
-/* ---------- Footer ------- */
+/* Footer */
 footer{
   background: linear-gradient(to bottom,#0f172a,#0b1220);
   color:#cbd5e1;
@@ -495,10 +490,6 @@ footer{
   .footer-grid{ grid-template-columns: 1fr; }
 }
 
-/* =========================
-   FIX OVERRIDES (append at end)
-   Keep Workshops styles isolated
-   ========================= */
 
 body.workshops-page .grid{
   max-width: 1200px;
@@ -506,7 +497,6 @@ body.workshops-page .grid{
   display: grid;
   gap: 34px;
 
-  /* ✅ 大屏固定两列更像 prototype，也更稳定对齐 */
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
 }
@@ -522,7 +512,6 @@ body.workshops-page .grid{
   }
 }
 
-/* ✅ 让每张卡“整体等高”，内容区可伸缩 */
 body.workshops-page .card{
   height: 100%;
   display: flex;
@@ -530,7 +519,7 @@ body.workshops-page .card{
 }
 
 body.workshops-page .card-media{
-  height: 260px; /* 两张图统一高度，底部更容易齐 */
+  height: 260px; 
 }
 
 body.workshops-page .card-body{
@@ -539,10 +528,10 @@ body.workshops-page .card-body{
   flex-direction: column;
   gap: 12px;
   padding: 26px 26px 24px;
-  min-height: 0; /* 防止奇怪撑开 */
+  min-height: 0;
 }
 
-/* ✅ 按钮固定在最底部 */
+
 body.workshops-page .btn{
   margin-top: auto;
   display: flex !important;
@@ -582,16 +571,16 @@ body.workshops-page .discussion-card{
 }
 
 body.workshops-page .discussion-body{
-  padding: 28px 34px; /* ✅ 少一点，prototype更紧凑 */
+  padding: 28px 34px; 
   display: grid;
   grid-template-columns: 1.3fr .7fr;
   gap: 24px;
   align-items: center;
 }
 
-/* ✅ 关键：把标题缩到 prototype 那种“刚好大” */
+
 body.workshops-page .discussion-body h3{
-  font-size: 30px;    /* 原来40太大 */
+  font-size: 30px;   
   line-height: 1.15;
   margin-bottom: 10px;
   letter-spacing: -0.2px;
@@ -610,7 +599,6 @@ body.workshops-page .speaker{
   font-weight: 800;
 }
 
-/* 右侧信息也缩一点 */
 body.workshops-page .d-meta{
   font-size: 15px;
   gap: 10px;

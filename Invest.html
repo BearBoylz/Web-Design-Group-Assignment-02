@@ -3,33 +3,331 @@
 <head>
 <meta charset="UTF-8">
 <title>Profile</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="./css/common-style.css">
 </head>
 <body>
 
 <header class="navbar">
-<div>GAF 2026</div>
-<nav>
-        <a href="index.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="Workshops.html">Workshops</a>
-        <a href="support.html">Invest</a>
-        <a href="support.html">Support Us</a>
-        <a href="about.html">About</a>
-</nav>
+  <div class="container">
+
+    <a href=" " class="logo-link">
+      <div class="logo-circle">G</div>
+      <div class="logo-text">
+        <h1>Galway Arts Festival</h1>
+        <p>Celebrate Creativity</p >
+      </div>
+    </a >
+
+    <nav>
+      <a href="index.html" class="active">Home</a >
+      <a href="events.html">Events</a >
+      <a href="workshops.html">Workshops</a >
+      <a href="invest.html">Invest</a >
+      <a href="support.html">Support Us</a >
+      <a href="about.html">About</a >
+    </nav>
+
+  </div>
 </header>
 
+<!-- ================= TOP NOTICE BAR ================= -->
+<div class="invest-notice">
+  <span>🎁 Online shop and account features coming soon!</span>
+</div>
 
-<section class="section">
-<h2>Personal Information</h2>
-<form>
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email">
-<input type="text" placeholder="Phone">
-<button class="btn">Save</button>
-</form>
+<!-- ================= HERO ================= -->
+<section class="hero invest-hero">
+  <div class="hero-overlay invest-hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="badge">💡 Invest in Creativity</span>
+
+    <h1 class="invest-title">
+      Art Investment<br />
+      Opportunities
+    </h1>
+
+    <p class="invest-subtitle">
+      Support emerging artists and build a meaningful collection
+    </p>
+  </div>
 </section>
 
+<!-- ================= STATS ================= -->
+<section class="section invest-stats-wrap">
 
+  <div class="invest-stats">
+    <div class="invest-stat">
+      <div class="invest-stat-icon">👥</div>
+      <h3>120+</h3>
+      <p>Featured Artists</p>
+    </div>
+
+    <div class="invest-stat">
+      <div class="invest-stat-icon">📊</div>
+      <h3>€2.5M</h3>
+      <p>Art Value Supported</p>
+    </div>
+
+    <div class="invest-stat">
+      <div class="invest-stat-icon">📈</div>
+      <h3>89%</h3>
+      <p>Artist Success Rate</p>
+    </div>
+
+    <div class="invest-stat">
+      <div class="invest-stat-icon">⭐</div>
+      <h3>15</h3>
+      <p>Years of Excellence</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= WHY INVEST ================= -->
+<section class="section invest-why">
+
+  <h2>Why Invest in Art?</h2>
+  <p class="subtitle">
+    Art investment combines financial returns with cultural impact and personal fulfillment
+  </p>
+
+  <div class="invest-why-grid">
+    <div class="invest-why-card">
+      <div class="invest-why-icon blue">🧑‍🎨</div>
+      <h3>Support Emerging Talent</h3>
+      <p>
+        Discover and invest in the next generation of Irish artists before they achieve international recognition.
+      </p>
+    </div>
+
+    <div class="invest-why-card">
+      <div class="invest-why-icon purple">📈</div>
+      <h3>Portfolio Diversification</h3>
+      <p>
+        Art investment offers unique diversification opportunities with potential for significant appreciation.
+      </p>
+    </div>
+
+    <div class="invest-why-card">
+      <div class="invest-why-icon pink">❤️</div>
+      <h3>Cultural Impact</h3>
+      <p>
+        Your investment directly supports the arts community and helps sustain Ireland’s vibrant cultural scene.
+      </p>
+    </div>
+
+    <div class="invest-why-card">
+      <div class="invest-why-icon orange">🎟️</div>
+      <h3>Exclusive Access</h3>
+      <p>
+        Investors receive priority viewing of new works, private studio visits, and invitations to exclusive events.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= FEATURED ARTISTS ================= -->
+<!-- <section class="section invest-artists">
+
+  <h2>Featured Artists</h2>
+  <p class="subtitle">Discover emerging talent with exceptional investment potential</p>
+
+  <div class="invest-artists-grid">
+
+    <article class="invest-artist-card">
+      <div class="invest-artist-media">
+        <img src="https://picsum.photos/600/420?random=31" alt="Aoife Murphy portfolio">
+        <span class="invest-price">€2,500 - €8,000</span>
+      </div>
+
+      <div class="invest-artist-body">
+        <h3>Aoife Murphy</h3>
+        <p class="invest-tag">Contemporary Painting</p>
+        <p class="invest-desc">
+          Aoife’s bold abstract works explore themes of Irish identity and landscape. Her recent solo exhibition sold out within days.
+        </p>
+
+        <a class="btn primary invest-btn" href="#">View Portfolio</a>
+      </div>
+    </article>
+
+    <article class="invest-artist-card">
+      <div class="invest-artist-media">
+        <img src="https://picsum.photos/600/420?random=32" alt="Sean O'Brien portfolio">
+        <span class="invest-price">€5,000 - €15,000</span>
+      </div>
+
+      <div class="invest-artist-body">
+        <h3>Sean O'Brien</h3>
+        <p class="invest-tag">Sculpture & Installation</p>
+        <p class="invest-desc">
+          Sean creates large-scale installations using reclaimed materials. His work has been featured in major Irish institutions.
+        </p>
+
+        <a class="btn primary invest-btn" href="#">View Portfolio</a>
+      </div>
+    </article>
+
+    <article class="invest-artist-card">
+      <div class="invest-artist-media">
+        <img src="https://picsum.photos/600/420?random=33" alt="Niamh Kelly portfolio">
+        <span class="invest-price">€1,800 - €6,000</span>
+      </div>
+
+      <div class="invest-artist-body">
+        <h3>Niamh Kelly</h3>
+        <p class="invest-tag">Mixed Media</p>
+        <p class="invest-desc">
+          Niamh combines traditional techniques with digital elements, creating unique pieces that bridge past and present.
+        </p>
+
+        <a class="btn primary invest-btn" href="#">View Portfolio</a>
+      </div>
+    </article>
+
+  </div>
+
+</section> -->
+
+<!-- ================= PROCESS ================= -->
+<section class="section invest-process light">
+
+  <h2>Investment Process</h2>
+  <p class="subtitle">We make art investment accessible and transparent</p>
+
+  <div class="invest-steps">
+
+    <div class="invest-step">
+      <div class="invest-step-num blue">1</div>
+      <div class="invest-step-body">
+        <h3>Consultation</h3>
+        <p>
+          Meet with our art advisors to discuss your interests, budget, and investment goals. We’ll help you understand the market and identify opportunities.
+        </p>
+      </div>
+    </div>
+
+    <div class="invest-step">
+      <div class="invest-step-num purple">2</div>
+      <div class="invest-step-body">
+        <h3>Artist Selection</h3>
+        <p>
+          Browse our curated selection of emerging artists. Attend studio visits, view portfolios, and learn about each artist’s trajectory and potential.
+        </p>
+      </div>
+    </div>
+
+    <div class="invest-step">
+      <div class="invest-step-num pink">3</div>
+      <div class="invest-step-body">
+        <h3>Acquisition</h3>
+        <p>
+          We handle all aspects of the purchase, including authentication, insurance, and delivery. You receive complete documentation and provenance.
+        </p>
+      </div>
+    </div>
+
+    <div class="invest-step">
+      <div class="invest-step-num orange">4</div>
+      <div class="invest-step-body">
+        <h3>Ongoing Support</h3>
+        <p>
+          Receive regular updates on your artists’ careers, market valuations, and opportunities to expand your collection. We’re here for the long term.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= INVESTOR STORIES ================= -->
+<section class="section invest-stories">
+
+  <h2>Investor Stories</h2>
+  <p class="subtitle">Hear from collectors who have built meaningful relationships with artists</p>
+
+  <div class="invest-stories-grid">
+
+    <div class="invest-story blue">
+      <div class="invest-stars">★★★★★</div>
+      <p class="invest-quote">
+        “Investing through the Galway Arts Festival has been incredibly rewarding. Not only has my collection appreciated significantly, but I’ve also built meaningful relationships with the artists and feel proud to support Irish creativity.”
+      </p>
+      <p class="invest-author">— Dr. Michael Chen, Collector</p>
+    </div>
+
+    <div class="invest-story green">
+      <div class="invest-stars">★★★★★</div>
+      <p class="invest-quote">
+        “The advisory team made art investment accessible and transparent. They helped me build a diverse collection that reflects my values while offering excellent financial potential. Highly recommended for first-time art investors.”
+      </p>
+      <p class="invest-author">— Sarah O’Sullivan, Entrepreneur</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<!-- <section class="invest-cta">
+  <div class="invest-cta-inner">
+    <h2>Start Your Art Investment Journey</h2>
+    <p>
+      Schedule a consultation with our art advisors to explore opportunities
+    </p>
+
+    <div class="invest-cta-actions">
+      <a href="#" class="btn white">📅 Schedule Consultation</a>
+      <a href="#" class="btn outline">⬇ Download Investment Guide</a>
+    </div>
+
+    <div class="invest-cta-meta">
+      Contact: invest@galwayartsfestival.ie | +353 91 509 700
+    </div>
+  </div>
+</section> -->
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h4>Galway Arts Festival</h4>
+<p>Celebrating creativity and artistic excellence in Ireland.</p>
+</div>
+
+<div>
+<h4>Quick Links</h4>
+<p>Events</p>
+<p>Workshops</p>
+<p>About</p>
+</div>
+
+<div>
+<h4>Get Involved</h4>
+<p>Invest</p>
+<p>Volunteer</p>
+<p>Support Us</p>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>Galway, Ireland</p>
+<p>info@galwayartsfestival.ie</p>
+<p>+353 91 509 700</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 Galway Arts Festival. All rights reserved.
+</p>
+
+</footer>
 </body>
 </html>

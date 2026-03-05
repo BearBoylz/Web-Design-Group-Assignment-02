@@ -783,3 +783,325 @@ rgba(252,176,69,0.6)
 );
 z-index:-1;
 }
+
+/* ================= INVEST PAGE ================= */
+
+/* top notice */
+.invest-notice{
+background:linear-gradient(90deg,#9333ea,#ec4899,#f97316);
+color:white;
+text-align:center;
+padding:10px 14px;
+font-size:.9rem;
+}
+
+/* hero */
+.invest-hero{
+height:60vh;
+background:url("https://picsum.photos/1600/900?random=99") center/cover no-repeat;
+}
+
+.invest-hero-overlay{
+background:linear-gradient(90deg,rgba(99,102,241,.70),rgba(236,72,153,.60),rgba(249,115,22,.55));
+}
+
+.invest-title{
+line-height:1.05;
+}
+
+.invest-subtitle{
+max-width:720px;
+margin:0 auto;
+}
+
+/* stats */
+.invest-stats-wrap{
+padding-top:35px;
+padding-bottom:35px;
+}
+
+.invest-stats{
+max-width:1100px;
+margin:0 auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+align-items:center;
+}
+
+.invest-stat{
+background:white;
+border-radius:14px;
+padding:18px 16px;
+text-align:center;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.invest-stat-icon{
+width:46px;
+height:46px;
+margin:0 auto 10px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#ff2e63;
+color:white;
+font-size:20px;
+}
+
+.invest-stat h3{
+margin:0;
+font-size:1.35rem;
+}
+
+.invest-stat p{
+margin-top:6px;
+color:#666;
+font-size:.92rem;
+}
+
+/* why invest */
+.invest-why-grid{
+max-width:1100px;
+margin:35px auto 0;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.invest-why-card{
+background:white;
+border-radius:16px;
+padding:22px;
+box-shadow:0 10px 22px rgba(0,0,0,.08);
+border-left:4px solid #ff2e63;
+
+text-align:left;
+}
+
+.invest-why-icon{
+width:44px;
+height:44px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:18px;
+margin-bottom:12px;
+}
+
+.invest-why-icon.blue{background:linear-gradient(135deg,#3b82f6,#60a5fa);}
+.invest-why-icon.purple{background:linear-gradient(135deg,#6366f1,#9333ea);}
+.invest-why-icon.pink{background:linear-gradient(135deg,#ec4899,#f43f5e);}
+.invest-why-icon.orange{background:linear-gradient(135deg,#f59e0b,#f97316);}
+
+.invest-why-card h3{
+margin:4px 0 8px;
+text-align:left;
+}
+
+.invest-why-card p{
+text-align:left;
+color:#666;
+}
+
+/* featured artists */
+.invest-artists-grid{
+max-width:1100px;
+margin:35px auto 0;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.invest-artist-card{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 22px rgba(0,0,0,.08);
+}
+
+.invest-artist-media{
+position:relative;
+height:220px;
+overflow:hidden;
+}
+
+.invest-artist-media img{
+width:100%;
+height:100%;
+object-fit:cover;
+filter:saturate(1.05);
+}
+
+.invest-price{
+position:absolute;
+left:12px;
+top:12px;
+background:rgba(255,255,255,.92);
+padding:6px 10px;
+border-radius:20px;
+font-size:.85rem;
+font-weight:600;
+}
+
+.invest-artist-body{
+padding:18px 18px 20px;
+}
+
+.invest-tag{
+color:#ff2e63;
+font-weight:700;
+font-size:.9rem;
+margin:6px 0 10px;
+}
+
+.invest-desc{
+color:#666;
+margin-bottom:14px;
+}
+
+.invest-btn{
+display:inline-block;
+padding:10px 18px;
+border-radius:999px;
+}
+
+/* process */
+.invest-steps{
+max-width:900px;
+margin:35px auto 0;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.invest-step{
+display:flex;
+gap:16px;
+align-items:flex-start;
+}
+
+.invest-process h2,
+.invest-process .subtitle{
+text-align:left;
+max-width:900px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.invest-step-body{
+text-align:left;
+}
+
+.invest-step-body h3{
+text-align:left;
+}
+
+.invest-step-body p{
+text-align:left;
+}
+
+.invest-step-num{
+width:34px;
+height:34px;
+border-radius:999px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:800;
+flex:0 0 34px;
+}
+
+.invest-step-num.blue{background:linear-gradient(135deg,#3b82f6,#60a5fa);}
+.invest-step-num.purple{background:linear-gradient(135deg,#6366f1,#9333ea);}
+.invest-step-num.pink{background:linear-gradient(135deg,#ec4899,#f43f5e);}
+.invest-step-num.orange{background:linear-gradient(135deg,#f59e0b,#f97316);}
+
+.invest-step-body h3{
+margin:0 0 6px;
+}
+
+.invest-step-body p{
+margin:0;
+color:#666;
+}
+
+/* stories */
+.invest-stories-grid{
+max-width:1100px;
+margin:35px auto 0;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.invest-story{
+background:white;
+border-radius:16px;
+padding:22px;
+box-shadow:0 10px 22px rgba(0,0,0,.08);
+}
+
+.invest-story.blue{border:2px solid rgba(59,130,246,.25);}
+.invest-story.pink{border:2px solid rgba(236,72,153,.25);}
+
+.invest-stars{
+letter-spacing:2px;
+margin-bottom:10px;
+color:#f59e0b;
+}
+
+.invest-quote{
+color:#444;
+line-height:1.7;
+margin-bottom:12px;
+}
+
+.invest-author{
+color:#666;
+font-weight:700;
+margin:0;
+}
+
+/* CTA */
+.invest-cta{
+background:linear-gradient(90deg,#ff006e,#ff4d6d);
+color:white;
+padding:70px 20px;
+}
+
+.invest-cta-inner{
+max-width:1100px;
+margin:0 auto;
+text-align:center;
+}
+
+.invest-cta-actions{
+margin-top:18px;
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+}
+
+.invest-cta-meta{
+margin-top:16px;
+opacity:.9;
+font-size:.92rem;
+}
+
+/* responsive */
+@media(max-width:960px){
+.invest-stats{grid-template-columns:repeat(2,1fr);}
+.invest-artists-grid{grid-template-columns:1fr; }
+.invest-why-grid{grid-template-columns:1fr;}
+}
+
+@media(max-width:768px){
+.invest-hero{height:55vh;}
+.invest-stories-grid{grid-template-columns:1fr;}
+}

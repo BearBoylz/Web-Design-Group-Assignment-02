@@ -43,6 +43,10 @@ line-height:1.6;
   background: #f5f5f5;
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Logo */
@@ -253,6 +257,10 @@ margin-bottom:30px;
 .event img{
 border-radius:12px;
 margin-bottom:10px;
+
+width:100%;
+height:220px;
+object-fit:cover;
 }
 
 .main-btn{
@@ -430,6 +438,20 @@ color:#9333ea;
 
 .audience-card.purple a{
 color:#9333ea;
+}
+
+/* ORANGE */
+.audience-card.orange::before{
+background:linear-gradient(90deg,#f97316,#fb923c);
+}
+
+.audience-card.orange .icon{
+background:#fff3e6;
+color:#f97316;
+}
+
+.audience-card.orange a{
+color:#f97316;
 }
 
 /* PINK */
@@ -715,7 +737,7 @@ color:white;
 
 /* colors */
 
-.orange{
+/* .orange{
 background:linear-gradient(135deg,#f59e0b,#f97316);
 }
 
@@ -742,7 +764,7 @@ color:white;
 
 .green{
 background:linear-gradient(135deg,#10b981,#14b8a6);
-}
+} */
 
 
 /* mobile */
@@ -798,7 +820,6 @@ font-size:.9rem;
 /* hero */
 .invest-hero{
 height:60vh;
-background:url("https://picsum.photos/1600/900?random=99") center/cover no-repeat;
 }
 
 .invest-hero-overlay{
@@ -1104,4 +1125,16 @@ font-size:.92rem;
 @media(max-width:768px){
 .invest-hero{height:55vh;}
 .invest-stories-grid{grid-template-columns:1fr;}
+}
+
+.invest-process h2{
+font-size:2.5rem;
+font-weight:700;
+text-align:center;
+margin-bottom:10px;
+}
+
+.invest-process .subtitle{
+text-align:center;
+margin-bottom:60px;
 }

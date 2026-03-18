@@ -86,7 +86,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-wrap: wrap;
 }
 
 nav a {
@@ -319,7 +318,7 @@ color:#aaa;
 @media(max-width:768px){
 
 .hero{
-height:55vh;
+height:70vh;
 }
 
 .hero h1{
@@ -826,16 +825,6 @@ z-index:-1;
 }
 
 /* ================= INVEST PAGE ================= */
-
-/* top notice */
-.invest-notice{
-background:linear-gradient(90deg,#9333ea,#ec4899,#f97316);
-color:white;
-text-align:center;
-padding:10px 14px;
-font-size:.9rem;
-}
-
 /* hero */
 .invest-hero{
 height:60vh;
